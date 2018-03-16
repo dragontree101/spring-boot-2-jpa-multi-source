@@ -1,0 +1,16 @@
+server.port: 8081
+
+spring:
+  datasource:
+    read:
+      jdbcurl: jdbc:mysql://127.0.0.1:3306/hnframeworktest?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+      username: root
+      password: password
+      name: readDs
+    write:
+      jdbcUrl: jdbc:mysql://127.0.0.1:3306/hnframeworktest?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
+      username: root
+      password: password
+      name: writeDs
+  jpa:
+    show-sql: true
